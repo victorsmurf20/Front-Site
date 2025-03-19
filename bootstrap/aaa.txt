@@ -1,0 +1,52 @@
+
+/* Garante que as setas do carrossel do Bootstrap sejam visíveis */
+.carousel-control-prev-icon{ 
+    background-color: rgba(248, 130, 203, 0.521); /* Cor de fundo das setas */
+  border-radius: 50%; /* Deixa as setas com borda arredondada */
+  width: 40px; /* Ajuste do tamanho da seta */
+  height: 40px; /* Ajuste do tamanho da seta */
+
+}
+.carousel-control-next-icon {
+  background-color: rgba(248, 130, 203, 0.521); /* Cor de fundo das setas */
+  border-radius: 50%; /* Deixa as setas com borda arredondada */
+  width: 40px; /* Ajuste do tamanho da seta */
+  height: 40px; /* Ajuste do tamanho da seta */
+
+}
+
+/* Aumenta a visibilidade das setas ao passar o mouse */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgb(248, 130, 203); /* Cor de fundo quando o mouse passa */
+}
+
+.container {
+    width: 100%;
+}
+
+
+
+
+/* Faz as setas ficarem fixas nas laterais da tela */
+.setas .carousel-control-prev,
+.setas .carousel-control-next {
+  position: fixed;
+  top: 45%;
+  transform: translateY(-50%);  /* Centra as setas verticalmente */
+  width: 50px;  /* Largura das setas */
+  height: 100px; /* Estica as setas verticalmente */
+
+  color: white;
+  z-index: 10;
+}
+
+/* A seta esquerda vai para o lado esquerdo da tela */
+.setas .carousel-control-prev {
+  left: 0;
+}
+
+/* A seta direita vai para o lado direito da tela */
+.setas .carousel-control-next {
+  right: 0;
+}
